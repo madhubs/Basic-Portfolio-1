@@ -1,0 +1,133 @@
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  background: #99ced4 ; /* cotton: header and footer background */
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.name {
+  border-top: 4px solid #648880;
+  font-size: 48px;
+  font-weight: 200;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 20px;
+  text-transform: uppercase;
+  background: #293f50;
+  color: white;
+  overflow: auto;
+}
+
+.name a {
+  float: left;
+}
+
+.primary-nav {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 40px 10;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Main Section
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.main {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
+
+#portrait {
+  float: left;
+  padding: 0px 20px;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #648880;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
