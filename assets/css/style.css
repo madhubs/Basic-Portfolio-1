@@ -4,9 +4,48 @@
   Custom styles
   ========================================
 */
+
+html,
 body {
-  background: #99ced4 ; /* cotton: header and footer background */
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  background-image: url('../images/morocco-blue.png');
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+  color: white;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-size: 26px;
+}
+
+h2, h3, h4 {
+  color: black;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+p {
+  color: black;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 /*
@@ -15,21 +54,31 @@ body {
   ========================================
 */
 
-.name {
-  border-top: 4px solid #648880;
-  font-size: 48px;
+#logo {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 38px;
   font-weight: 200;
   letter-spacing: .5px;
-  line-height: 44px;
-  padding: 20px;
+  line-height: 42px;
   text-transform: uppercase;
-  background: #293f50;
+  padding: 11px;
   color: white;
-  overflow: auto;
+  float: left;
+  background: #648880;
+  width: 400px;
+  margin-top: -86px;
+  margin-left: 206px;
 }
 
-.name a {
-  float: left;
+.banner {
+  line-height: 67px;
+  padding: 20px;
+  background: #293f50;
+  color: white;
+  margin-left: -226px;
+  margin-right: -226px;
+  border-bottom: 4px solid #648880;
+
 }
 
 .primary-nav {
@@ -37,7 +86,8 @@ body {
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
-  padding: 40px 10;
+  margin-right: 226px;
+
 }
 
 /*
@@ -96,6 +146,39 @@ body {
   width: 960px;
 }
 
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #648880;
+  width: 100%;
+  border: 4px solid #000;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0em;
+  margin-bottom: 2em;
+}
+
+#left {
+  float: left;
+  width: 20%;
+  height: 100px;
+}
+#right {
+  float: left;
+  width: 20%;
+  height: 100px;
+}
+
 /*
   ========================================
   Images
@@ -105,6 +188,14 @@ body {
 #portrait {
   float: left;
   padding: 0px 20px;
+  inline-size: 25%;
+}
+#preview {
+  float: left;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  inline-size: 240px;
 }
 
 /*
@@ -130,4 +221,107 @@ p a {
 .primary-header a:hover,
 .primary-footer a:hover {
   color: #648880;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  color: #87cefa; /* light sky blue */
+  font-size: 14\6px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  background: #293f50;
+  padding: 20px;
+  border-top: 4px solid #648880;
+  width: 100%;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 200;
+
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #87cefa;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn2 {
+  margin-left: 220px;
+}
+.btn3 {
+  margin-left: 420px;
+}
+.btn4 {
+  margin-left: 620px;
+}
+.btn-default {
+  border: 0;
+  background: #293f50; /* pickled bluewood */
+  padding: 11px 30px;
+  font-size: 20px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+input,
+textarea {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.register-group label {
+  color: #black;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 26px;
+}
+.register-group input,
+.register-group textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #88800;
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+
+.register-group textarea {
+  height: 150px;
 }

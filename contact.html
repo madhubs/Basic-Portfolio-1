@@ -3,30 +3,80 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact T.M. Sulik</title>
+    <title>Student Bio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <!-- bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
 </head>
 
 <body>
     <!-- Header -->
     <header class="primary-header container group">
-        <h1>Under construction</h1>
-
+        <div class="banner">
+        <!--
+        <div class="name">
+            <a>Thomas Martin <br> Sulik</a>
+        -->
+        <nav class="nav primary-nav">   
+            <ul><h1>
+              <li><a href="index.html">About</a></li><!--
+              --><li><a href="portfolio.html">Portfolio</a></li><!--
+              --><li><a href="contact.html">Contact</a></li>
+            </h1></ul>
+          </nav>
+          <!--
+        </div>
+        -->
+        <div id="logo">Thomas Martin <br> Sulik</div>
+    </div>
     </header>
+    <br> </br>
 
     <!-- Main content -->
     <div class = "container">
         <section class="main">
+            <h1>Contact</h1>
+            <hr/>
+
+            <fieldset class="register-group">
+                <label>
+                Name
+                <input type="text" name="name" placeholder="John Smith" required>
+                </label>
+        
+                <label>
+                Email
+                <input type="email" name="email" placeholder="example@gmail.com" required>
+                </label>
+        
+                <label>
+                Message
+                <textarea name=""></textarea>
+                </label>
+
+            </fieldset>
+            
+            <input class="btn btn-default" type="submit" name="submit" value="Submit">
+
+
         </section>
     </div>
+    <br> </br>
     <!-- Footer -->
-    <footer>
-
+    <footer class="footer primary-footer">
+        <small>&copy; Copyright 2018, T.M. Sulik Promotions, LLC</small>
+            <nav class="nav">
+              <ul>
+                <li><a href="index.html">About</a></li><!--
+                --><li><a href="portfolio.html">Portfolio</a></li><!--
+                --><li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
     </footer>
 </body>
 
