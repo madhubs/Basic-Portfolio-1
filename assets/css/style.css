@@ -179,6 +179,26 @@ p {
   height: 100px;
 }
 
+#first {
+  float: left;
+  width: 25%;
+}
+
+#second {
+  float: left;
+  width: 25%;
+}
+
+#third {
+  float: left;
+  width: 25%;
+}
+
+#fourth {
+  float: left;
+  width: 25%;
+}
+
 /*
   ========================================
   Images
@@ -190,12 +210,16 @@ p {
   padding: 0px 20px;
   inline-size: 25%;
 }
-#preview {
+
+.preview {
   float: left;
   padding: 0px 20px;
   margin-bottom: 20px;
-  margin-left: -20px;
   inline-size: 240px;
+}
+
+#stretch {
+  height: 10px;
 }
 
 /*
@@ -240,6 +264,7 @@ p a {
   border-top: 4px solid #648880;
   width: 100%;
 }
+
 .primary-footer small {
   float: left;
   font-weight: 200;
@@ -260,17 +285,10 @@ p a {
   display: inline-block;
   font-weight: 400;
   letter-spacing: .5px;
-  margin: 0;
   text-transform: uppercase;
 }
 .btn2 {
-  margin-left: 220px;
-}
-.btn3 {
-  margin-left: 420px;
-}
-.btn4 {
-  margin-left: 620px;
+  margin-left: 20px;
 }
 .btn-default {
   border: 0;
@@ -292,7 +310,7 @@ p a {
 
 /*
   ========================================
-  Register
+  Contact
   ========================================
 */
 
@@ -302,14 +320,15 @@ textarea {
   font-size: 20px;
 }
 
-.register-group label {
+.send-email label {
   color: #black;
   cursor: pointer;
   font-weight: 600;
   font-size: 26px;
 }
-.register-group input,
-.register-group textarea {
+
+.send-email input,
+.send-email textarea {
   border: 1px solid black;
   border-radius: 5px;
   color: #88800;
@@ -317,11 +336,11 @@ textarea {
   margin: 5px 0 20px 0;
   padding: 5px 8px;
 }
-.register-group input,
-.register-group textarea {
+.send-email input,
+.send-email textarea {
   width: 100%;
 }
 
-.register-group textarea {
+.send-email textarea {
   height: 150px;
 }
